@@ -1336,3 +1336,33 @@ footer,
   }
 }
 
+
+/* AJUSTE FINAL HEADER RESPONSIVE */
+.hero.hero-premium{
+  width:100%;
+  aspect-ratio:16 / 6;
+  min-height:auto !important;
+  height:auto !important;
+  background-size:contain !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  background-color:#050302 !important;
+}
+
+@media(max-width:780px){
+  .hero.hero-premium{
+    aspect-ratio:16 / 7;
+    min-height:auto !important;
+    background-size:contain !important;
+    background-position:center center !important;
+    border-radius:0 !important;
+  }
+}
+
+@media(max-width:480px){
+  .hero.hero-premium{
+    aspect-ratio:16 / 8;
+    background-size:contain !important;
+    background-position:center center !important;
+  }
+}
