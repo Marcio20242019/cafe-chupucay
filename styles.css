@@ -1465,3 +1465,63 @@ footer,
   }
 }
 
+
+
+/* =========================================================
+   BOTÓN FLOTANTE WHATSAPP - CORRECCIÓN FINAL
+   ========================================================= */
+
+.float{
+  position:fixed !important;
+  right:20px !important;
+  bottom:20px !important;
+  width:68px !important;
+  height:68px !important;
+  margin:0 !important;
+  padding:0 !important;
+  border-radius:50% !important;
+  background:#25D366 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-decoration:none !important;
+  z-index:9999 !important;
+  box-shadow:0 8px 25px rgba(0,0,0,.35) !important;
+  animation:pulseWhatsapp 2s infinite !important;
+}
+
+.float img{
+  width:38px !important;
+  height:38px !important;
+  display:block !important;
+  object-fit:contain !important;
+  border-radius:0 !important;
+  filter:none !important;
+}
+
+.float:hover{
+  transform:scale(1.08) !important;
+}
+
+@keyframes pulseWhatsapp{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 8px 25px rgba(0,0,0,.35);}
+  70%{box-shadow:0 0 0 18px rgba(37,211,102,0),0 8px 25px rgba(0,0,0,.35);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 8px 25px rgba(0,0,0,.35);}
+}
+
+@media(max-width:780px){
+  .float{
+    width:60px !important;
+    height:60px !important;
+    right:16px !important;
+    bottom:16px !important;
+  }
+
+  .float img{
+    width:34px !important;
+    height:34px !important;
+  }
+}
+
+
+
