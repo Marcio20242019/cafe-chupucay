@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260">
+<defs><linearGradient id="o" x1="0" x2="1"><stop offset="0" stop-color="#ff8a00"/><stop offset="1" stop-color="#f36b00"/></linearGradient></defs>
+<circle cx="120" cy="130" r="86" fill="url(#o)"/>
+<text x="120" y="164" text-anchor="middle" font-family="Arial Black, Montserrat, Arial" font-size="82" font-weight="900" fill="#1c120d">CC</text>
+<path d="M82 77 C75 38 104 32 116 75 C123 35 154 37 147 77 C169 45 193 60 167 96 C149 118 91 118 73 96 C47 60 70 45 82 77Z" fill="none" stroke="#1c120d" stroke-width="9" stroke-linecap="round"/>
+<text x="240" y="116" font-family="Arial Black, Montserrat, Arial" font-size="88" font-weight="900" fill="#fff">Café</text>
+<text x="240" y="205" font-family="Arial Black, Montserrat, Arial" font-size="88" font-weight="900" fill="#fff">CHUPUCAY</text>
+</svg>
