@@ -1066,3 +1066,205 @@ footer b{color:#ffe0a5}
   object-fit:contain !important;
   object-position:left center !important;
 }
+
+/* =========================
+   OPTIMIZACIÓN MÓVIL
+   Café Chupucay
+========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 35px 18px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+  }
+
+  .hero-content,
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-logo,
+  .brand-logo,
+  .logo-header {
+    max-width: 92%;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero h1,
+  .brand-title {
+    font-size: 42px;
+    line-height: .95;
+    text-align: center;
+  }
+
+  .script,
+  .hero-script {
+    font-size: 34px;
+    line-height: 1.1;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .brand-line,
+  .origin-line {
+    font-size: 17px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-image,
+  .coffee-cup {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 230px !important;
+    max-width: 80%;
+    margin: 25px auto 0;
+  }
+
+  .products-grid,
+  .stores-grid,
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 26px;
+  }
+
+  .section-title,
+  .products-title {
+    font-size: 32px;
+    line-height: 1.1;
+    padding: 0 12px;
+  }
+
+  .section-subtitle {
+    font-size: 21px;
+    padding: 0 15px;
+  }
+
+  .product-card,
+  .store-card,
+  .contact-card {
+    width: 100%;
+    max-width: 92%;
+    margin: 0 auto;
+  }
+
+  .product-card img {
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+  }
+
+  .why-section,
+  .why-choose {
+    padding: 30px 15px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 18px;
+  }
+
+  .why-item {
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 18px;
+    padding: 25px 18px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 280px;
+    max-width: 92%;
+    height: auto;
+  }
+
+  .footer-divider {
+    width: 160px;
+    height: 1px;
+  }
+
+  .footer-script {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .footer-origin {
+    font-size: 18px;
+  }
+
+  .footer-decoration span {
+    width: 75px;
+  }
+
+  .whatsapp-float {
+    width: 58px !important;
+    height: 58px !important;
+    right: 18px !important;
+    bottom: 18px !important;
+  }
+
+  .whatsapp-float img,
+  .whatsapp-float svg,
+  .whatsapp-float i {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding-top: 28px;
+  }
+
+  .hero h1,
+  .brand-title {
+    font-size: 34px;
+  }
+
+  .script,
+  .hero-script {
+    font-size: 30px;
+  }
+
+  .brand-line,
+  .origin-line {
+    font-size: 15px;
+  }
+
+  .section-title,
+  .products-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 19px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-logo {
+    width: 245px;
+  }
+}
