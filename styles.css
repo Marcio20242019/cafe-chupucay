@@ -1366,3 +1366,31 @@ footer,
     background-position:center center !important;
   }
 }
+
+/* HEADER RESPONSIVE DEFINITIVO */
+.hero.hero-premium{
+  display:none !important;
+}
+
+.hero-premium-img{
+  width:100%;
+  margin:0;
+  padding:0;
+  border:1px solid rgba(255,130,0,.62);
+  background:#050302;
+  overflow:hidden;
+}
+
+.hero-premium-img img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+@media(max-width:780px){
+  .hero-premium-img{
+    border-left:0;
+    border-right:0;
+  }
+}
+
