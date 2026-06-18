@@ -1067,3 +1067,272 @@ footer b{color:#ffe0a5}
   object-position:left center !important;
 }
 
+
+/* =========================================================
+   RESPONSIVE FINAL - Café Chupucay
+   Pegar al final del archivo. Hace compatible celular, tablet y PC.
+   ========================================================= */
+
+html{
+  width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  width:100%;
+  min-width:0;
+  overflow-x:hidden;
+}
+
+img, video, iframe{
+  max-width:100%;
+  height:auto;
+}
+
+.page{
+  width:min(1180px,100%) !important;
+  max-width:1180px !important;
+  margin:0 auto !important;
+  padding:clamp(12px, 3vw, 22px) !important;
+  overflow:hidden !important;
+}
+
+.hero,
+.section,
+.split > div,
+footer,
+.footer-premium,
+.link-panel,
+.store-grid article,
+.product-card{
+  max-width:100% !important;
+}
+
+.hero.hero-premium{
+  width:100% !important;
+  aspect-ratio:16 / 6.2;
+  min-height:260px !important;
+  height:auto !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+
+.link-panel{
+  width:100% !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+}
+
+.product-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+}
+
+.store-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+}
+
+.quality-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+}
+
+.story,
+.cafe-oficial{
+  grid-template-columns:1fr 1fr !important;
+}
+
+.footer-premium{
+  width:100% !important;
+}
+
+/* Tablets */
+@media(max-width:980px){
+  .page{
+    padding:14px !important;
+  }
+
+  .hero.hero-premium{
+    aspect-ratio:16 / 7;
+    min-height:250px !important;
+  }
+
+  .product-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+
+  .store-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  }
+
+  .story,
+  .cafe-oficial{
+    grid-template-columns:1fr !important;
+    text-align:center !important;
+  }
+}
+
+/* Celulares */
+@media(max-width:780px){
+  .page{
+    width:100% !important;
+    max-width:100% !important;
+    padding:0 !important;
+  }
+
+  .hero.hero-premium{
+    border-radius:0 !important;
+    aspect-ratio:auto !important;
+    min-height:270px !important;
+    background-size:cover !important;
+    background-position:center top !important;
+  }
+
+  .section{
+    padding:18px 14px !important;
+  }
+
+  .link-panel{
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    margin:0 !important;
+    border-left:0 !important;
+    border-right:0 !important;
+    border-radius:0 !important;
+  }
+
+  .link-panel a{
+    min-height:82px !important;
+    padding:9px 3px !important;
+  }
+
+  .link-panel img{
+    width:40px !important;
+    height:40px !important;
+  }
+
+  .link-panel strong{
+    font-size:11px !important;
+    line-height:1.1 !important;
+  }
+
+  .product-grid,
+  .split,
+  .story,
+  .cafe-oficial{
+    grid-template-columns:1fr !important;
+  }
+
+  .product-card .product-img{
+    height:220px !important;
+  }
+
+  .store-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+
+  .quality-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+
+  .footer-premium{
+    grid-template-columns:1fr !important;
+    border-radius:0 0 18px 18px !important;
+    padding:18px 12px !important;
+    gap:14px !important;
+  }
+
+  .footer-premium .footer-brand{
+    width:100% !important;
+    justify-content:center !important;
+  }
+
+  .footer-premium .footer-brand img.footer-logo-original{
+    width:min(310px,88vw) !important;
+    max-width:88vw !important;
+  }
+
+  .footer-premium .footer-separator{
+    width:70% !important;
+    height:1px !important;
+    margin:auto !important;
+  }
+}
+
+/* Celulares pequeños */
+@media(max-width:480px){
+  .hero.hero-premium{
+    min-height:230px !important;
+    background-position:center top !important;
+  }
+
+  .title h2,
+  .quality-box .title h2{
+    font-size:20px !important;
+  }
+
+  .link-panel a{
+    min-height:76px !important;
+  }
+
+  .link-panel img{
+    width:34px !important;
+    height:34px !important;
+  }
+
+  .link-panel strong{
+    font-size:10px !important;
+  }
+
+  .store-grid{
+    gap:10px !important;
+  }
+
+  .store-grid article{
+    min-height:165px !important;
+  }
+
+  .store-grid img{
+    height:120px !important;
+  }
+
+  .store-grid b{
+    font-size:13px !important;
+  }
+
+  .product-card h3{
+    font-size:22px !important;
+  }
+
+  .product-card p{
+    font-size:15px !important;
+  }
+
+  .footer-premium .footer-copy .script{
+    font-size:25px !important;
+  }
+
+  .footer-premium .footer-copy b{
+    font-size:14px !important;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media(max-width:360px){
+  .hero.hero-premium{
+    min-height:205px !important;
+  }
+
+  .link-panel strong{
+    font-size:9px !important;
+  }
+
+  .link-panel img{
+    width:31px !important;
+    height:31px !important;
+  }
+}
+
+/* Pantallas grandes */
+@media(min-width:1181px){
+  .page{
+    max-width:1180px !important;
+  }
+}
+
